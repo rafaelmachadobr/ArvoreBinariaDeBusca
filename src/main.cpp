@@ -6,9 +6,9 @@ using namespace std;
 
 int main()
 {
-    setlocale(LC_ALL, "Portuguese");
+    setlocale(LC_ALL, "Portuguese"); // Configuração da localidade para exibição de caracteres acentuados
 
-    ArvoreBinariaDeBusca arvore;
+    ArvoreBinariaDeBusca arvore; // Cria uma instância da classe ArvoreBinariaDeBusca
     int opcao, valor, escolha;
 
     cout << "Árvore Binária de Busca\n";
@@ -28,12 +28,12 @@ int main()
         case 1:
             cout << "\nDigite o valor a ser inserido: ";
             cin >> valor;
-            arvore.insercao(valor);
+            arvore.insercao(valor); // Chama o método de inserção da árvore
             break;
         case 2:
             cout << "\nDigite o valor a ser removido: ";
             cin >> valor;
-            arvore.remocao(valor);
+            arvore.remocao(valor); // Chama o método de remoção da árvore
             break;
         case 3:
         {
@@ -47,13 +47,13 @@ int main()
             switch (escolha)
             {
             case 1:
-                arvore.preOrdem();
+                arvore.preOrdem(); // Chama o método de percurso pré-ordem da árvore
                 break;
             case 2:
-                arvore.emOrdem();
+                arvore.emOrdem(); // Chama o método de percurso em ordem da árvore
                 break;
             case 3:
-                arvore.posOrdem();
+                arvore.posOrdem(); // Chama o método de percurso pós-ordem da árvore
                 break;
             default:
                 cout << "\nOpção inválida!\n";
