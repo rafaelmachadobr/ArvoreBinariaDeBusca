@@ -127,6 +127,21 @@ private:
         }
     }
 
+    // Método privado para realizar o percurso pós-ordem na árvore
+    void posOrdem(No *no)
+    {
+        // Se o nó não é nulo
+        if (no != NULL)
+        {
+            // Chama recursivamente o percurso pós-ordem para o filho esquerdo
+            posOrdem(no->esq);
+            // Chama recursivamente o percurso pós-ordem para o filho direito
+            posOrdem(no->dir);
+            // Imprime o valor do nó
+            cout << no->info << ", ";
+        }
+    }
+
 public:
     // Construtor da classe
     ArvoreBinariaDeBusca()
