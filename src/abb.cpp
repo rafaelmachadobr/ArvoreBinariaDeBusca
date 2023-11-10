@@ -112,21 +112,6 @@ private:
         }
     }
 
-    // Método privado para realizar o percurso pré-ordem na árvore
-    void preOrdem(No *no)
-    {
-        // Se o nó não é nulo
-        if (no != NULL)
-        {
-            // Imprime o valor do nó
-            cout << no->info << ", ";
-            // Chama recursivamente o percurso pré-ordem para o filho esquerdo
-            preOrdem(no->esq);
-            // Chama recursivamente o percurso pré-ordem para o filho direito
-            preOrdem(no->dir);
-        }
-    }
-
     // Método privado para realizar o percurso em ordem na árvore
     void emOrdem(No *no)
     {
