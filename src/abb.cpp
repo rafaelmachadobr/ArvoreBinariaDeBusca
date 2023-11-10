@@ -86,9 +86,7 @@ private:
     {
         if (no != NULL)
         {
-            cout << no->info;
-            if (no->esq != NULL || no->dir != NULL)
-                cout << ", ";
+            cout << no->info << ", ";
             preOrdem(no->esq);
             preOrdem(no->dir);
         }
@@ -99,9 +97,7 @@ private:
         if (no != NULL)
         {
             emOrdem(no->esq);
-            cout << no->info;
-            if (no->esq != NULL || no->dir != NULL)
-                cout << ", ";
+            cout << no->info << ", ";
             emOrdem(no->dir);
         }
     }
@@ -112,9 +108,7 @@ private:
         {
             posOrdem(no->esq);
             posOrdem(no->dir);
-            cout << no->info;
-            if (no->esq != NULL || no->dir != NULL)
-                cout << ", ";
+            cout << no->info << ", ";
         }
     }
 
