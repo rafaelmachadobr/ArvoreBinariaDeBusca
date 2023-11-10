@@ -61,7 +61,7 @@ int main()
             break;
         }
         case 0:
-            cout << "\nSaindo...\n";
+            cout << "\nObrigado por utilizar o programa!";
             break;
         default:
             cout << "\nOpção inválida!\n";
